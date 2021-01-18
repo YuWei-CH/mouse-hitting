@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!--导入jquery库-->
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<!--导入css外部样式-->
+		<link rel="stylesheet" href="css/game.css"></link>
+		
+	</head>
+
+	<body>
+		<!--界面布局的快速拓展公式： .stage>(.hud>.score+.life+.record)+(row>hole[id=d$]*3)*3-->
+		<!--主游戏区域-->
+		
+		<div class="stage">
+			<!--抬头显-->
+			<div class="hud">
+				<!--当前得分-->
+				<div class="score">score:<span id="score" >0</span></div>
+				<!--生命值-->
+				<div class="life"></div>
+				<!--历史记录-->
+				<div class="record">record:<span id="record" >0</span></div>
+			</div>
+			<!--第一行鼠洞-->
+			<div class="row">
+				<div class="hole" id='d1'></div>
+				<div class="hole" id='d2'></div>
+				<div class="hole" id='d3'></div>
+			</div>
+			<!--第二行鼠洞-->
+			<div class="row">
+				<div class="hole" id='d4'></div>
+				<div class="hole" id='d5'></div>
+				<div class="hole" id='d6'></div>
+			</div>
+			<!--第三行鼠洞-->
+			<div class="row">
+				<div class="hole" id='d7'></div>
+				<div class="hole" id='d8'></div>
+				<div class="hole" id='d9'></div>
+			</div>
+			<script 
+			        type="text/javascript" src="./js/mouse.js">
+			</script>
+			<script>
+				//调用执行game()函数
+				game()
+			</script>
+		</div>
+	</body>
+
+</html>
