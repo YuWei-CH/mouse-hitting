@@ -1,0 +1,147 @@
+			/*给body元素添加背景图片*/	
+			body {
+				background-image: url(../img/grass.jpg);
+			}
+			/*设置mole图片出现的位置*/
+			
+			img {
+				/*开启位置移动:绝对移动*/
+				position: absolute;
+				left: 55px;
+				top: 30px;
+			}
+			/*给主游戏界面设置样式*/
+			
+			.stage {
+				user-select: none;
+				/*水平居中*/
+				margin: auto;
+				margin-top: 50px;
+				height: 800px;
+				width: 1200px;
+				/*容器内的内容的对齐方式:水平居中*/
+				text-align: center;
+				/*鼠标在该区域内的样式*/
+				cursor: url('../img/h3.ico') 50 50, pointer;
+			}
+			/*当鼠标在主界面区域点击时*/	
+			.stage:active {
+				/*鼠标样式发生改变*/
+				cursor: url('../img/h4.ico') 50 50, pointer
+			}
+			/*给行容器指定样式*/	
+			.row {
+				height: 200px;
+				width: 800px;
+				margin: auto;
+				margin-top: 35px;
+			}
+			/*给每个鼠洞容器添加样式*/		
+			.hole {
+				/*将显示洞口的div转换成行块级元素,这样转换后的div即可以指定宽高又可以水平排列*/
+				display: inline-block;
+				height: 180px;
+				width: 250px;
+				/*每行的三个div均匀散开*/
+				margin-left: 10px;
+				/*设置背景填充时不重复*/
+				background-repeat: no-repeat;
+				/*设置背景*/
+				background-image: url('../img/hole.png');
+				/*设置背景的位置*/
+				background-position: bottom;
+				/*设置洞口容器可移动*/
+				position: relative;
+				/*设置溢出的内容隐藏*/
+				overflow: hidden;
+			}
+			
+		
+			
+			.hud {
+				padding: 0px 10px;
+				/*设置抬头显容器为弹性盒子*/
+				display: flex;
+				justify-content: space-around;
+			}
+			
+			/*给抬头显内部的容器添加样式*/
+			.hud div {
+				display: inline-block;
+				color: white;
+				font-family: "comic sans ms";
+				font-size: 48px;
+				font-weight: bold;
+				text-align: left;
+			}
+			
+			/*生命值*/
+			.life {
+				height: 80px;
+				width: 260px;
+				background-image: url(../img/life.png);
+				background-position:-1px 0px;
+				}
+			
+			/*得分*/
+			.score {
+				width: 200px;
+			}
+			/*最高分*/
+			.record {
+				width: 400px;
+			}
+			
+			/*设置加分字体的样式*/
+			
+			.msg {
+				position: absolute;
+				/*文字颜色*/
+				color:white;
+				/*字体大小*/
+				font-size: 64px;
+				/*字体*/
+				font-family: "franklin gothic book";
+			}
+			.gamebegin{
+			          text-align: center;
+					   position:absolute;
+			           top:0;
+			           bottom:0;
+			           left:0;
+			           right: 0;
+			           background:url(../img/Beginning%20page.png)
+				}
+			
+			.gamebegin button{
+				      margin-top: 550px;
+				      width:160px;
+				      height: 50px;
+				      background-color: aqua;
+				      border-radius: 3px;
+			}
+			.gameover{
+			           position:absolute;
+			           top:0;
+			           bottom:0;
+			           left:0;
+			           right: 0;
+			           background:url(../img/gameover.gif)
+				}
+			.gameover button{
+					      margin-top: 550px;
+						  margin-left: 640px;
+						  width:160px;
+						  height: 50px;
+						  background-color: aqua;
+						  border-radius: 3px;
+				}
+			.time {
+				position:absolute;
+				top:0px;
+				margin: auto;
+				bottom:20px;
+				left:100px;
+				right:100px;
+				background:url(../img/timg.gif)
+			}
