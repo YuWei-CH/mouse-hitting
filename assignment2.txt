@@ -1,0 +1,21 @@
+goal：
+   To finish the wack-a-mole game's basic logic using native javascript or jQuery library
+due date:
+    October 26, 2020 by noon
+
+specifications:
+    Find the basecode in the assignment folder and use it as a scaffold of your work.
+    There are two paths to approach the goal: solo and with-a-peer. If you choose only to finish the core functionalities of the game then you work independently and to be eligible to enter a peer work context, you have to implement at least two of the extended features.
+    core (mandatory):
+    score evaluating and display (40%)
+    end of game logic (40%)
+    and a game over display (20%)
+
+    extended (optional):
+    countdown effect
+    miss hit effect (turning one mole figure in the life bar to grey)
+    hit effect (poping scores, adding sound, adding animations, etc)
+    record high function
+    
+    You have to clearly document your work by adding comments to your code so I can catch the intention of your code easily. If you finish the work
+with a peer, you will also need to submit a text file describing the part you focused on.
